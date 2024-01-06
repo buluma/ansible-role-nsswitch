@@ -38,7 +38,7 @@ jobs:
       - name: molecule
         uses: buluma/molecule-action@v4.0.8
         with:
-          command: lint -vvv
+          command: lint
 
   lint:
     runs-on: ubuntu-20.04
