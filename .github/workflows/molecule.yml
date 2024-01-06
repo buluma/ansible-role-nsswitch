@@ -28,6 +28,18 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  og_lint:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          path: "${{ github.repository }}"
+      - name: molecule
+        uses: buluma/molecule-action@v4.0.8
+        with:
+          command: lint -vvv
+
   lint:
     runs-on: ubuntu-20.04
     steps:
