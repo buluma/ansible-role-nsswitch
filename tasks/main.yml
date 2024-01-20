@@ -1,6 +1,6 @@
 ---
 # tasks file for nsswitch
-- name: deploy nsswitch.conf
+- name: Deploy nsswitch.conf
   ansible.builtin.template:
     src: '{{ lookup("first_found", __nsswitch_template) }}'
     dest: /etc/nsswitch.conf
