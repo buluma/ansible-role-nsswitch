@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.2.0](https://github.com/buluma/ansible-role-nsswitch/tree/v0.2.0) (2024-01-20)
+
+[Full Changelog](https://github.com/buluma/ansible-role-nsswitch/compare/v0.1.0...v0.2.0)
+
 ## [v0.1.0](https://github.com/buluma/ansible-role-nsswitch/tree/v0.1.0) (2023-12-24)
 
 [Full Changelog](https://github.com/buluma/ansible-role-nsswitch/compare/abab21125d0c4e8171d888cc85afbff2f70538b0...v0.1.0)
