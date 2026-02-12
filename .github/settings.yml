@@ -5,4 +5,4 @@
 repository:
   description: Configure Name Server Switch on your systems.
   homepage: https://buluma.github.io/
-  topics: nsswitch, ansible, molecule, tox, playbook
+  topics: nsswitch, ansible, molecule, playbook
