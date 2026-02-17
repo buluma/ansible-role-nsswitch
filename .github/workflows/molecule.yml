@@ -41,7 +41,13 @@ jobs:
       matrix:
         distro:
           - image: "docker-molecule-images"
-            tag: "latest"
+            tag: "fedora_latest"
+          - image: "docker-molecule-images"
+            tag: "fedora42"
+          - image: "docker-molecule-images"
+            tag: "fedora44"
+          - image: "docker-molecule-images"
+            tag: "fedora45"
           - image: "enterpriselinux"
             tag: "8"
           - image: "enterpriselinux"
