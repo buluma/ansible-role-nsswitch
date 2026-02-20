@@ -14,6 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: galaxy
-        uses: buluma/galaxy-action@v6.25.22
+        uses: buluma/galaxy-action@v10.30.23
         with:
           galaxy_api_key: ${{ secrets.galaxy_api_key }}
