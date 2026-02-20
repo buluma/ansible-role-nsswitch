@@ -1,14 +1,11 @@
 ---
 galaxy_info:
-  author: Michael Buluma
-  namespace: buluma
+  author: buluma
   role_name: nsswitch
-  description: Configure Name Server Switch on your systems.
-  company: ShadowNet
+  description: 'Configure Name Server Switch on your systems.'
   license: Apache-2.0
-
-  min_ansible_version: 2.1
-
+  company: ShadowNet
+  min_ansible_version: '2.12'
   platforms:
     - name: Fedora
       versions:
@@ -16,8 +13,6 @@ galaxy_info:
     - name: EL
       versions:
         - all
-
   galaxy_tags:
     - nsswitch
-
 dependencies: []
