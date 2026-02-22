@@ -11,26 +11,23 @@ Configure Name Server Switch on your systems.
 This example is taken from [`molecule/default/converge.yml`](https://github.com/buluma/ansible-role-nsswitch/blob/master/molecule/default/converge.yml) and is tested on each push, pull request and release.
 
 ```yaml
----
-- name: Converge
-  hosts: all
+- hosts: all
+  name: Converge
   tasks:
-    - name: "Include buluma.nsswitch"
-      ansible.builtin.include_role:
-        name: "buluma.nsswitch"
+  - ansible.builtin.include_role:
+      name: buluma.nsswitch
+    name: Include buluma.nsswitch
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-nsswitch/blob/master/molecule/default/prepare.yml):
 
 ```yaml
----
-- name: Prepare
-  hosts: all
+- become: true
   gather_facts: false
-  become: true
-
+  hosts: all
+  name: Prepare
   roles:
-    - role: buluma.bootstrap
+  - role: buluma.bootstrap
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
