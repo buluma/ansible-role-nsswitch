@@ -1,7 +1,8 @@
-- ansible.builtin.template:
-    dest: /etc/nsswitch.conf
-    group: root
-    mode: 420
-    owner: root
-    src: '{{ lookup("first_found", __nsswitch_template) }}'
-  name: Deploy nsswitch.conf
+---
+  - ansible.builtin.template:
+      dest: /etc/nsswitch.conf
+      group: root
+      mode: 420
+      owner: root
+      src: '{{ lookup("first_found", __nsswitch_template) }}'
+    name: Deploy nsswitch.conf
