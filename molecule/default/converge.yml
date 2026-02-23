@@ -1,7 +1,7 @@
 ---
-  - hosts: all
-    name: Converge
-    tasks:
-      - ansible.builtin.include_role:
-          name: buluma.nsswitch
-        name: Include buluma.nsswitch
+- hosts: all
+  name: Converge
+  tasks:
+  - ansible.builtin.include_role:
+      name: buluma.nsswitch
+    name: Include buluma.nsswitch
