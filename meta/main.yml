@@ -5,14 +5,14 @@ galaxy_info:
   company: ShadowNet
   description: Configure Name Server Switch on your systems.
   galaxy_tags:
-  - nsswitch
+    - nsswitch
   license: Apache-2.0
-  min_ansible_version: '2.12'
+  min_ansible_version: "2.12"
   platforms:
-  - name: Fedora
-    versions:
-    - all
-  - name: EL
-    versions:
-    - all
+    - name: Fedora
+      versions:
+        - all
+    - name: EL
+      versions:
+        - all
   role_name: nsswitch
