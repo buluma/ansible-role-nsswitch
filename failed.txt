@@ -1,3 +1,3 @@
 ansible-role-nsswitch [generator]: ERROR: Unhandled exception when retrieving 'DEFAULT_LOCAL_TMP': [Errno 1] Operation not permitted: '/Users/shadowwalker/.ansible/tmp/ansible-local-85862rd2o0vyk'
-ansible-role-nsswitch [ansible-lint]:  node = self.get_single_node() File "yaml/_yaml.pyx", line 675, in yaml._yaml.CParser.get_single_node File "yaml/_yaml.pyx", line 861, in yaml._yaml.CParser._parse_next_event yaml.parser.ParserError: did not find expected <document start> in "<unicode string>", line 10, column 1 
-ansible-role-nsswitch [yamllint]: ./tasks/main.yml 9:15 error forbidden implicit octal value "0644" (octal-values) 
+ansible-role-nsswitch [ansible-lint]:  node = self.get_single_node() File "yaml/_yaml.pyx", line 675, in yaml._yaml.CParser.get_single_node File "yaml/_yaml.pyx", line 861, in yaml._yaml.CParser._parse_next_event yaml.parser.ParserError: did not find expected <document start> in "<unicode string>", line 10, column 1
+ansible-role-nsswitch [yamllint]: ./tasks/main.yml 9:15 error forbidden implicit octal value "0644" (octal-values)
