@@ -12,24 +12,24 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
 ```yaml
 ---
-- hosts: all
-  name: Converge
+- name: Converge
+  hosts: all
   tasks:
-  - ansible.builtin.include_role:
-      name: buluma.nsswitch
-    name: Include buluma.nsswitch
+    - name: Include buluma.nsswitch
+      ansible.builtin.include_role:
+        name: buluma.nsswitch
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-nsswitch/blob/master/molecule/default/prepare.yml):
 
 ```yaml
 ---
-- become: true
+- name: Prepare
+  become: true
   gather_facts: false
   hosts: all
-  name: Prepare
   roles:
-  - role: buluma.bootstrap
+    - role: buluma.bootstrap
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
