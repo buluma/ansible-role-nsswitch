@@ -1,0 +1,17 @@
+---
+- name: Verify
+  hosts: all
+  become: true
+  gather_facts: false
+
+  tasks:
+    - name: Check nsswitch.conf exists
+      ansible.builtin.stat:
+        path: /etc/nsswitch.conf
+      register: nsswitch_conf
+
+    - name: Assert nsswitch.conf is present
+      ansible.builtin.assert:
+        that:
+          - nsswitch_conf.stat.exists
+        quiet: true
