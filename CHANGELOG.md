@@ -1,5 +1,18 @@
 # Changelog
 
+## [v26.6.0](https://github.com/buluma/ansible-role-nsswitch/tree/v26.6.0) (2026-06-14)
+
+[Full Changelog](https://github.com/buluma/ansible-role-nsswitch/compare/v24.3.31...v26.6.0)
+
+**Merged pull requests:**
+
+- Bump docker/setup-buildx-action from 3 to 4 [\#12](https://github.com/buluma/ansible-role-nsswitch/pull/12) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/setup-python from 5 to 6 [\#9](https://github.com/buluma/ansible-role-nsswitch/pull/9) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/checkout from 4 to 6 [\#8](https://github.com/buluma/ansible-role-nsswitch/pull/8) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump buluma/galaxy-action from 6.25.22 to 10.30.23 [\#7](https://github.com/buluma/ansible-role-nsswitch/pull/7) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump buluma/molecule-action from 4.0.7 to 5.0.4 [\#4](https://github.com/buluma/ansible-role-nsswitch/pull/4) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump buluma/galaxy-action from 1.0.3 to 6.25.22 [\#1](https://github.com/buluma/ansible-role-nsswitch/pull/1) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v24.3.31](https://github.com/buluma/ansible-role-nsswitch/tree/v24.3.31) (2024-03-26)
 
 [Full Changelog](https://github.com/buluma/ansible-role-nsswitch/compare/v0.2.0...v24.3.31)
