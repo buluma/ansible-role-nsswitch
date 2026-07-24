@@ -73,10 +73,15 @@ hosts:      files dns
 #ethers:     nisplus [NOTFOUND=return] files
 #netmasks:   nisplus [NOTFOUND=return] files
 
+{# nisplus dropped from these defaults too: glibc removed NIS+ support
+   entirely (no libnss_nisplus.so module ships on modern systems), and an
+   NSS database naming a module that can't be loaded at all - as opposed to
+   one that's merely unavailable - breaks the whole lookup for that
+   database, including netgroup lookups PAM's account phase depends on. #}
 {% if nsswitch_bootparams is defined %}
 bootparams: {{ nsswitch_bootparams | join(' ') }}
 {% else %}
-bootparams: nisplus [NOTFOUND=return] files
+bootparams: files
 {% endif %}
 
 {% if nsswitch_ethers is defined %}
@@ -113,23 +118,23 @@ services:   files
 {% if nsswitch_netgroup is defined %}
 netgroup:   {{ nsswitch_netgroup | join(' ') }}
 {% else %}
-netgroup:   nisplus sss
+netgroup:   files
 {% endif %}
 
 {% if nsswitch_publickey is defined %}
 publickey:  {{ nsswitch_publickey | join(' ') }}
 {% else %}
-publickey:  nisplus
+publickey:  files
 {% endif %}
 
 {% if nsswitch_automount is defined %}
 automount:  {{ nsswitch_automount | join(' ') }}
 {% else %}
-automount:  files nisplus sss
+automount:  files
 {% endif %}
 {% if nsswitch_aliases is defined %}
 aliases:    {{ nsswitch_aliases | join(' ') }}
 {% else %}
-aliases:    files nisplus
+aliases:    files
 
 {% endif %}
