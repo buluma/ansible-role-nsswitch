@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-nsswitch/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-nsswitch/compare/v26.6.2...HEAD)
+
+**Merged pull requests:**
+
+- Bump release-drafter/release-drafter from 7 to 7.6.0 [\#17](https://github.com/buluma/ansible-role-nsswitch/pull/17) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v26.6.2](https://github.com/buluma/ansible-role-nsswitch/tree/v26.6.2) (2026-07-26)
 
 [Full Changelog](https://github.com/buluma/ansible-role-nsswitch/compare/v26.6.1...v26.6.2)
